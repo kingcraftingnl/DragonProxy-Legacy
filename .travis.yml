@@ -1,0 +1,7 @@
+language: java
+
+matrix:
+  include:
+    - jdk: oraclejdk8
+    script:
+      - cd lib && mvn install:install-file -Dfile=leveldb.jar -DgroupId=com.tinfoiled.mcpe.leveldb -DartifactId=leveldb -Dversion=0.8 -Dpackaging=jar && cd .. && mvn install package

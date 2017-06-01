@@ -9,6 +9,7 @@ doc
 target/
 !.gitignore
 !.gitmodules
+!.travis.yml
 !.mailmap
 !.gitattributes
 worlds
