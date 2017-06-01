@@ -16,8 +16,8 @@ import org.dragonet.proxy.network.CacheKey;
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.cache.CachedEntity;
 import org.dragonet.proxy.network.translator.PCPacketTranslator;
-import org.spacehq.mc.protocol.data.MagicValues;
-import org.spacehq.mc.protocol.packet.ingame.server.entity.ServerEntityEffectPacket;
+import com.github.steveice10.mc.protocol.data.MagicValues;
+import com.github.steveice10.mc.protocol.packet.ingame.server.entity.ServerEntityEffectPacket;
 
 import cn.nukkit.network.protocol.MobEffectPacket;
 import net.marfgamer.jraknet.RakNetPacket;

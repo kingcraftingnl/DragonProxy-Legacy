@@ -14,8 +14,8 @@ package org.dragonet.proxy.network.translator.pc;
 
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.PCPacketTranslator;
-import org.spacehq.mc.protocol.data.game.entity.player.GameMode;
-import org.spacehq.mc.protocol.packet.ingame.server.world.ServerNotifyClientPacket;
+import com.github.steveice10.mc.protocol.data.game.entity.player.GameMode;
+import com.github.steveice10.mc.protocol.packet.ingame.server.world.ServerNotifyClientPacket;
 import net.marfgamer.jraknet.RakNetPacket;
 import sul.protocol.pocket101.play.LevelEvent;
 import sul.protocol.pocket101.play.SetPlayerGametype;

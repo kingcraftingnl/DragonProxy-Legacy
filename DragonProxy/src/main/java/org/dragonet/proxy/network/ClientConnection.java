@@ -32,7 +32,7 @@ import org.dragonet.proxy.network.adapter.ClientProtocolAdapter;
 import org.dragonet.proxy.network.adapter.ServerProtocolAdapter;
 import org.dragonet.proxy.network.cache.EntityCache;
 import org.dragonet.proxy.network.cache.WindowCache;
-import org.spacehq.mc.protocol.data.game.PlayerListEntry;
+import com.github.steveice10.mc.protocol.data.game.PlayerListEntry;
 
 /**
  * Maintaince the connection between the proxy and Minecraft: Pocket Edition

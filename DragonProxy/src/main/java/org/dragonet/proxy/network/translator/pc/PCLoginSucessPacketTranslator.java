@@ -3,7 +3,7 @@ package org.dragonet.proxy.network.translator.pc;
 import org.dragonet.proxy.DragonProxy;
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.PCPacketTranslator;
-import org.spacehq.mc.protocol.packet.login.server.LoginSuccessPacket;
+import com.github.steveice10.mc.protocol.packet.login.server.LoginSuccessPacket;
 
 import net.marfgamer.jraknet.RakNetPacket;
 import sul.protocol.pocket101.play.PlayStatus;

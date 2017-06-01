@@ -16,7 +16,7 @@ import org.dragonet.proxy.network.InventoryTranslatorRegister;
 import org.dragonet.proxy.DragonProxy;
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.PEPacketTranslator;
-import org.spacehq.packetlib.packet.Packet;
+import com.github.steveice10.packetlib.packet.Packet;
 
 import sul.protocol.pocket101.play.ContainerClose;
 

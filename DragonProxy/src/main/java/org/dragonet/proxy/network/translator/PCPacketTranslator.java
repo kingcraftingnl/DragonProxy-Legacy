@@ -15,7 +15,7 @@ package org.dragonet.proxy.network.translator;
 import net.marfgamer.jraknet.RakNetPacket;
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.PacketTranslatorRegister;
-import org.spacehq.packetlib.packet.Packet;
+import com.github.steveice10.packetlib.packet.Packet;
 
 public interface PCPacketTranslator<P extends Packet> {
 

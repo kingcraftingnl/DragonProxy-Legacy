@@ -14,9 +14,9 @@ package org.dragonet.proxy.network.translator.pc;
 
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.PCPacketTranslator;
-import org.spacehq.mc.protocol.data.game.PlayerListEntry;
-import org.spacehq.mc.protocol.data.game.PlayerListEntryAction;
-import org.spacehq.mc.protocol.packet.ingame.server.ServerPlayerListEntryPacket;
+import com.github.steveice10.mc.protocol.data.game.PlayerListEntry;
+import com.github.steveice10.mc.protocol.data.game.PlayerListEntryAction;
+import com.github.steveice10.mc.protocol.packet.ingame.server.ServerPlayerListEntryPacket;
 
 import net.marfgamer.jraknet.RakNetPacket;
 

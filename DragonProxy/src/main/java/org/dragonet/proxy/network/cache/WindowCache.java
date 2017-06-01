@@ -21,7 +21,7 @@ import java.util.Map;
 import lombok.Getter;
 
 import org.dragonet.proxy.network.ClientConnection;
-import org.spacehq.packetlib.packet.Packet;
+import com.github.steveice10.packetlib.packet.Packet;
 
 public final class WindowCache {
 

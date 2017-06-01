@@ -17,8 +17,8 @@ import java.util.Map;
 
 import lombok.Getter;
 
-import org.spacehq.mc.protocol.data.MagicValues;
-import org.spacehq.mc.protocol.data.game.entity.type.MobType;
+import com.github.steveice10.mc.protocol.data.MagicValues;
+import com.github.steveice10.mc.protocol.data.game.entity.type.MobType;
 
 public enum EntityType {
 

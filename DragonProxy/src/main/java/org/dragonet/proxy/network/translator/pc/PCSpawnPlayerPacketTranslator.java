@@ -4,8 +4,8 @@ import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.cache.CachedEntity;
 import org.dragonet.proxy.network.translator.PCPacketTranslator;
 import org.dragonet.proxy.utilities.DefaultSkin;
-import org.spacehq.mc.protocol.data.game.entity.metadata.EntityMetadata;
-import org.spacehq.mc.protocol.packet.ingame.server.entity.spawn.ServerSpawnPlayerPacket;
+import com.github.steveice10.mc.protocol.data.game.entity.metadata.EntityMetadata;
+import com.github.steveice10.mc.protocol.packet.ingame.server.entity.spawn.ServerSpawnPlayerPacket;
 
 import cn.nukkit.entity.data.Skin;
 import cn.nukkit.item.Item;

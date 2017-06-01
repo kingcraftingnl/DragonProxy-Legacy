@@ -19,7 +19,7 @@ import org.dragonet.proxy.network.CacheKey;
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.cache.CachedWindow;
 import org.dragonet.proxy.network.translator.InventoryTranslator;
-import org.spacehq.mc.protocol.data.game.entity.metadata.Position;
+import com.github.steveice10.mc.protocol.data.game.entity.metadata.Position;
 
 import org.dragonet.inventory.PEInventorySlot;
 

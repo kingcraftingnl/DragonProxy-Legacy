@@ -17,14 +17,14 @@ import java.util.Map;
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.ItemBlockTranslator;
 import org.dragonet.proxy.network.translator.PCPacketTranslator;
-import org.spacehq.mc.protocol.data.game.chunk.Chunk;
-import org.spacehq.mc.protocol.packet.ingame.server.world.ServerChunkDataPacket;
+import com.github.steveice10.mc.protocol.data.game.chunk.Chunk;
+import com.github.steveice10.mc.protocol.packet.ingame.server.world.ServerChunkDataPacket;
 
 import net.marfgamer.jraknet.RakNetPacket;
 import org.dragonet.proxy.network.PacketTranslatorRegister;
-import org.spacehq.mc.protocol.data.game.chunk.BlockStorage;
-import org.spacehq.mc.protocol.data.game.chunk.Column;
-import org.spacehq.mc.protocol.data.game.world.block.BlockState;
+import com.github.steveice10.mc.protocol.data.game.chunk.BlockStorage;
+import com.github.steveice10.mc.protocol.data.game.chunk.Column;
+import com.github.steveice10.mc.protocol.data.game.world.block.BlockState;
 import sul.protocol.pocket101.play.FullChunkData;
 import sul.utils.Tuples;
 

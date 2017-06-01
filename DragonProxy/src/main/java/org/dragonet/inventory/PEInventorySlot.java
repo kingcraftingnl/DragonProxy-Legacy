@@ -22,8 +22,8 @@ import java.nio.ByteOrder;
 import org.dragonet.proxy.network.translator.ItemBlockTranslator;
 import org.dragonet.proxy.utilities.io.PEBinaryReader;
 import org.dragonet.proxy.utilities.io.PEBinaryWriter;
-import org.spacehq.mc.protocol.data.game.entity.metadata.ItemStack;
-import org.spacehq.opennbt.tag.builtin.CompoundTag;
+import com.github.steveice10.mc.protocol.data.game.entity.metadata.ItemStack;
+import com.github.steveice10.opennbt.tag.builtin.CompoundTag;
 import sul.utils.Item;
 
 public class PEInventorySlot {

@@ -12,7 +12,7 @@
  */
 package org.dragonet.proxy.utilities;
 
-import org.spacehq.mc.protocol.MinecraftConstants;
+import com.github.steveice10.mc.protocol.MinecraftConstants;
 
 public class Versioning {
 

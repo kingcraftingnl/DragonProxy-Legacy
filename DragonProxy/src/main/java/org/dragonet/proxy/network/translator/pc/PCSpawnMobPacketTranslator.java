@@ -15,7 +15,7 @@ package org.dragonet.proxy.network.translator.pc;
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.cache.CachedEntity;
 import org.dragonet.proxy.network.translator.PCPacketTranslator;
-import org.spacehq.mc.protocol.packet.ingame.server.entity.spawn.ServerSpawnMobPacket;
+import com.github.steveice10.mc.protocol.packet.ingame.server.entity.spawn.ServerSpawnMobPacket;
 
 import net.marfgamer.jraknet.RakNetPacket;
 import sul.metadata.Pocket101;

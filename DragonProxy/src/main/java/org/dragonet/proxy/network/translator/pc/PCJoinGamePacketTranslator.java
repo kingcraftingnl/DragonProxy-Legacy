@@ -16,7 +16,7 @@ import java.util.Base64;
 import org.dragonet.proxy.network.CacheKey;
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.PCPacketTranslator;
-import org.spacehq.mc.protocol.packet.ingame.server.ServerJoinGamePacket;
+import com.github.steveice10.mc.protocol.packet.ingame.server.ServerJoinGamePacket;
 
 import net.marfgamer.jraknet.RakNetPacket;
 import sul.metadata.Pocket101;

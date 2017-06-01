@@ -14,10 +14,10 @@ package org.dragonet.proxy.network.translator.pe;
 
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.PEPacketTranslator;
-import org.spacehq.mc.protocol.data.game.MessageType;
-import org.spacehq.mc.protocol.packet.ingame.client.ClientChatPacket;
-import org.spacehq.mc.protocol.packet.ingame.server.ServerChatPacket;
-import org.spacehq.packetlib.packet.Packet;
+import com.github.steveice10.mc.protocol.data.game.MessageType;
+import com.github.steveice10.mc.protocol.packet.ingame.client.ClientChatPacket;
+import com.github.steveice10.mc.protocol.packet.ingame.server.ServerChatPacket;
+import com.github.steveice10.packetlib.packet.Packet;
 import sul.protocol.pocket101.play.Text.Chat;
 
 public class PEChatPacketTranslator implements PEPacketTranslator<Chat> {

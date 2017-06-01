@@ -14,13 +14,13 @@ package org.dragonet.proxy.network.translator.pe;
 
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.PEPacketTranslator;
-import org.spacehq.mc.protocol.data.MagicValues;
-import org.spacehq.mc.protocol.data.game.entity.metadata.Position;
-import org.spacehq.mc.protocol.data.game.entity.player.Hand;
-import org.spacehq.mc.protocol.data.game.world.block.BlockFace;
-import org.spacehq.mc.protocol.packet.ingame.client.player.ClientPlayerPlaceBlockPacket;
-import org.spacehq.mc.protocol.packet.ingame.client.player.ClientPlayerSwingArmPacket;
-import org.spacehq.packetlib.packet.Packet;
+import com.github.steveice10.mc.protocol.data.MagicValues;
+import com.github.steveice10.mc.protocol.data.game.entity.metadata.Position;
+import com.github.steveice10.mc.protocol.data.game.entity.player.Hand;
+import com.github.steveice10.mc.protocol.data.game.world.block.BlockFace;
+import com.github.steveice10.mc.protocol.packet.ingame.client.player.ClientPlayerPlaceBlockPacket;
+import com.github.steveice10.mc.protocol.packet.ingame.client.player.ClientPlayerSwingArmPacket;
+import com.github.steveice10.packetlib.packet.Packet;
 
 import sul.protocol.pocket101.play.UseItem;
 

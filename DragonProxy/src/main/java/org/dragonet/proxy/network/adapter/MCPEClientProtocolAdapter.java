@@ -139,8 +139,10 @@ public class MCPEClientProtocolAdapter implements ClientProtocolAdapter<RakNetPa
         }
     }
         
+
+
     @Override
-    public void handlePacket(RakNetClientSession session, RakNetPacket packet, int channel) {
+    public void handleMessage(RakNetClientSession session, RakNetPacket packet, int channel) {
         if (!sessionList.containsKey(session.getGloballyUniqueId())) {
             DragonProxy.getLogger().warning(sender + "Session " + session.getAddress() + " didn't exist");
             sessionList.put(session.getGloballyUniqueId(), getSessionUUID(session.getGloballyUniqueId()));
@@ -178,13 +180,13 @@ public class MCPEClientProtocolAdapter implements ClientProtocolAdapter<RakNetPa
     }
 
     @Override
-    public void onAcknowledge(RakNetClientSession session, Record record, Reliability reliability, int channel, RakNetPacket packet) {
-        DragonProxy.getLogger().debug(sender + "Recieved ACK for packet " + packet.getId());
+    public void onAcknowledge(RakNetClientSession session, Record record) {
+        DragonProxy.getLogger().debug(sender + "Recieved ACK for packet ");
     }
 
     @Override
-    public void onAddressBlocked(InetAddress address, long time) {
-        DragonProxy.getLogger().info(sender + "Proxy Blocked Client: " + address + " for " + time);
+    public void onNotAcknowledge(RakNetClientSession session, Record record) {
+        DragonProxy.getLogger().debug(sender + "Did not recieve ACK for packet ");
     }
 
     @Override
@@ -227,10 +229,9 @@ public class MCPEClientProtocolAdapter implements ClientProtocolAdapter<RakNetPa
         throwable.printStackTrace();
     }
 
-    @Override
-    public void onNotAcknowledge(RakNetClientSession session, Record record, Reliability reliability, int channel, RakNetPacket packet) {
-        DragonProxy.getLogger().debug(sender + "Did not recieve ACK for packet " + packet.getId());
-    }
+
+
+
 
     @Override
     public void onServerShutdown() {

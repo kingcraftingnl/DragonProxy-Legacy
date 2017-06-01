@@ -14,9 +14,9 @@ package org.dragonet.proxy.network.translator;
 
 import java.util.List;
 
-import org.spacehq.mc.protocol.data.message.ChatColor;
-import org.spacehq.mc.protocol.data.message.ChatFormat;
-import org.spacehq.mc.protocol.data.message.Message;
+import com.github.steveice10.mc.protocol.data.message.ChatColor;
+import com.github.steveice10.mc.protocol.data.message.ChatFormat;
+import com.github.steveice10.mc.protocol.data.message.Message;
 
 public final class MessageTranslator {
 

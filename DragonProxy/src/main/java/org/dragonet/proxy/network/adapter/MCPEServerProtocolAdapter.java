@@ -31,7 +31,6 @@ import net.marfgamer.jraknet.RakNetException;
 import net.marfgamer.jraknet.RakNetPacket;
 import net.marfgamer.jraknet.client.RakNetClient;
 import net.marfgamer.jraknet.client.RakNetClientListener;
-import net.marfgamer.jraknet.client.Warning;
 import net.marfgamer.jraknet.identifier.Identifier;
 import net.marfgamer.jraknet.protocol.Reliability;
 import net.marfgamer.jraknet.protocol.message.acknowledge.Record;
@@ -100,9 +99,11 @@ public class MCPEServerProtocolAdapter implements ServerProtocolAdapter<RakNetPa
         }
     }
 
+
+
     @Override
-    public void onAcknowledge(RakNetServerSession session, Record record, Reliability reliability, int channel, RakNetPacket packet) {
-        DragonProxy.getLogger().debug(sender + "Recieved ACK for packet " + packet.getId());
+    public void onAcknowledge(RakNetServerSession session, Record record) {
+        DragonProxy.getLogger().debug(sender + "Recieved ACK for packet ");
     }
 
     @Override
@@ -151,9 +152,12 @@ public class MCPEServerProtocolAdapter implements ServerProtocolAdapter<RakNetPa
     }
 
     @Override
-    public void onNotAcknowledge(RakNetServerSession session, Record record, Reliability reliability, int channel, RakNetPacket packet) {
-        DragonProxy.getLogger().debug(sender + "Did not recieve ACK for packet " + packet.getId());
+    public void onNotAcknowledge(RakNetServerSession session, Record record) {
+        DragonProxy.getLogger().debug(sender + "Did not recieve ACK for packet ");
     }
+
+
+
 
     @Override
     public void onServerDiscovered(InetSocketAddress address, Identifier identifier) {
@@ -174,15 +178,12 @@ public class MCPEServerProtocolAdapter implements ServerProtocolAdapter<RakNetPa
     }
 
     @Override
-    public void onWarning(Warning warning) {
-        DragonProxy.getLogger().warning(sender + "Proxy Warn: " + warning.getMessage());
-    }
-
-    @Override
-    public void handlePacket(RakNetServerSession session, RakNetPacket packet, int channel) {
+    public void handleMessage(RakNetServerSession session, RakNetPacket packet, int channel) {
         DragonProxy.getLogger().debug(sender + "Handling Packet from Channel: " + channel + ": " + Integer.toHexString(packet.buffer().getByte(1)));
         handlePacket(packet, upstream);
     }
+
+
 
     @Override
     public void handlePacket(RakNetPacket packet, ClientConnection session) {

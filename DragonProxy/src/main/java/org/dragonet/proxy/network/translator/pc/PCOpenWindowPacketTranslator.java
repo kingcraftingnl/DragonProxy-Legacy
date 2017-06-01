@@ -16,7 +16,7 @@ import org.dragonet.proxy.network.InventoryTranslatorRegister;
 import org.dragonet.proxy.DragonProxy;
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.PCPacketTranslator;
-import org.spacehq.mc.protocol.packet.ingame.server.window.ServerOpenWindowPacket;
+import com.github.steveice10.mc.protocol.packet.ingame.server.window.ServerOpenWindowPacket;
 
 import net.marfgamer.jraknet.RakNetPacket;
 

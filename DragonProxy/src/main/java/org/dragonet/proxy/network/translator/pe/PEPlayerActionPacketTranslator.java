@@ -15,16 +15,16 @@ package org.dragonet.proxy.network.translator.pe;
 import org.dragonet.proxy.network.CacheKey;
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.PEPacketTranslator;
-import org.spacehq.mc.protocol.data.MagicValues;
-import org.spacehq.mc.protocol.data.game.ClientRequest;
-import org.spacehq.mc.protocol.data.game.entity.metadata.Position;
-import org.spacehq.mc.protocol.data.game.entity.player.PlayerAction;
-import org.spacehq.mc.protocol.data.game.entity.player.PlayerState;
-import org.spacehq.mc.protocol.data.game.world.block.BlockFace;
-import org.spacehq.mc.protocol.packet.ingame.client.ClientRequestPacket;
-import org.spacehq.mc.protocol.packet.ingame.client.player.ClientPlayerActionPacket;
-import org.spacehq.mc.protocol.packet.ingame.client.player.ClientPlayerStatePacket;
-import org.spacehq.packetlib.packet.Packet;
+import com.github.steveice10.mc.protocol.data.MagicValues;
+import com.github.steveice10.mc.protocol.data.game.ClientRequest;
+import com.github.steveice10.mc.protocol.data.game.entity.metadata.Position;
+import com.github.steveice10.mc.protocol.data.game.entity.player.PlayerAction;
+import com.github.steveice10.mc.protocol.data.game.entity.player.PlayerState;
+import com.github.steveice10.mc.protocol.data.game.world.block.BlockFace;
+import com.github.steveice10.mc.protocol.packet.ingame.client.ClientRequestPacket;
+import com.github.steveice10.mc.protocol.packet.ingame.client.player.ClientPlayerActionPacket;
+import com.github.steveice10.mc.protocol.packet.ingame.client.player.ClientPlayerStatePacket;
+import com.github.steveice10.packetlib.packet.Packet;
 
 public class PEPlayerActionPacketTranslator implements PEPacketTranslator<sul.protocol.pocket101.play.PlayerAction> {
 

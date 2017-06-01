@@ -15,7 +15,7 @@ package org.dragonet.proxy.network.translator.pc;
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.ItemBlockTranslator;
 import org.dragonet.proxy.network.translator.PCPacketTranslator;
-import org.spacehq.mc.protocol.packet.ingame.server.world.ServerBlockChangePacket;
+import com.github.steveice10.mc.protocol.packet.ingame.server.world.ServerBlockChangePacket;
 
 import net.marfgamer.jraknet.RakNetPacket;
 import sul.protocol.pocket101.play.UpdateBlock;

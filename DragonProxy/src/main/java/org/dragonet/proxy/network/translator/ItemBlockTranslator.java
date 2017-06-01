@@ -17,10 +17,10 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-import org.spacehq.mc.protocol.data.game.entity.metadata.ItemStack;
+import com.github.steveice10.mc.protocol.data.game.entity.metadata.ItemStack;
 
-import org.spacehq.mc.protocol.data.message.Message;
-import org.spacehq.opennbt.tag.builtin.CompoundTag;
+import com.github.steveice10.mc.protocol.data.message.Message;
+import com.github.steveice10.opennbt.tag.builtin.CompoundTag;
 import sul.utils.Item;
 
 public class ItemBlockTranslator {
@@ -98,21 +98,21 @@ public class ItemBlockTranslator {
         return null;
     }
     
-    public static CompoundTag translateNBT(int id, org.spacehq.opennbt.tag.builtin.CompoundTag pcTag){
+    public static CompoundTag translateNBT(int id, com.github.steveice10.opennbt.tag.builtin.CompoundTag pcTag){
         /*CompoundTag peTag = new CompoundTag();
         if(pcTag != null && pcTag.contains("display")) {
 	  Object o = pcTag.get("display").getValue();
-	  if (o instanceof org.spacehq.opennbt.tag.builtin.CompoundTag) {
-		  org.spacehq.opennbt.tag.builtin.CompoundTag t = (org.spacehq.opennbt.tag.builtin.CompoundTag) o;
+	  if (o instanceof com.github.steveice10.opennbt.tag.builtin.CompoundTag) {
+		  com.github.steveice10.opennbt.tag.builtin.CompoundTag t = (com.github.steveice10.opennbt.tag.builtin.CompoundTag) o;
 		  if (t.contains("Name")){
-		    peTag.putCompound("display", new CompoundTag().putString("Name", ((org.spacehq.opennbt.tag.builtin.CompoundTag)pcTag.get("display").getValue()).get("Name").getValue().toString()));
+		    peTag.putCompound("display", new CompoundTag().putString("Name", ((com.github.steveice10.opennbt.tag.builtin.CompoundTag)pcTag.get("display").getValue()).get("Name").getValue().toString()));
 		  }
 	  } else {
 		if (o instanceof LinkedHashMap) {
 			LinkedHashMap map = (LinkedHashMap) o;
 			Set<String> t = map.keySet();
 			  if (t.contains("Name")){
-			    org.spacehq.opennbt.tag.builtin.StringTag tag = (org.spacehq.opennbt.tag.builtin.StringTag ) map.get("Name");
+			    com.github.steveice10.opennbt.tag.builtin.StringTag tag = (com.github.steveice10.opennbt.tag.builtin.StringTag ) map.get("Name");
 			    peTag.putCompound("display", new CompoundTag().putString("Name", tag.getValue().toString()));
 			  }
 		}

@@ -16,9 +16,9 @@ import java.lang.reflect.Field;
 
 import org.dragonet.proxy.network.ClientConnection;
 import org.dragonet.proxy.network.translator.PCPacketTranslator;
-import org.spacehq.mc.protocol.data.game.world.sound.CustomSound;
-import org.spacehq.mc.protocol.data.game.world.sound.Sound;
-import org.spacehq.mc.protocol.packet.ingame.server.world.ServerPlaySoundPacket;
+import com.github.steveice10.mc.protocol.data.game.world.sound.CustomSound;
+import com.github.steveice10.mc.protocol.data.game.world.sound.Sound;
+import com.github.steveice10.mc.protocol.packet.ingame.server.world.ServerPlaySoundPacket;
 
 import net.marfgamer.jraknet.RakNetPacket;
 import sul.protocol.pocket101.play.LevelEvent;
