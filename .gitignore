@@ -11,6 +11,7 @@ target/
 !.gitmodules
 !.mailmap
 !.gitattributes
+!lib/
 worlds
 logs
 console.log
