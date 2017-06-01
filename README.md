@@ -13,6 +13,8 @@ Wanna donate to help us? Go to http://dragonet.org/donate.php
 Once compiled, run `dragonproxy-*.jar` in `proxy/target` where '*' is the version number.
 
 ## Compiling
+To compille run this command in the lib folder  mvn install:install-file -Dfile=leveldb.jar -DgroupId=com.tinfoiled.mcpe.leveldb -DartifactId=leveldb -Dversion=0.8 -Dpackaging=jar 
+
 See the tutorial in the [wiki](https://github.com/DragonetMC/DragonProxy/wiki).
 Note: Maven won't build the project because every class in DragonProxy/DragonProxy/src/main/java/org/dragonet/proxy/network/translator/pe and DragonProxy/DragonProxy/src/main/java/org/dragonet/proxy/network/translator/pc has compile errors. Just move these folders out of the project to fix the problem until the translators are updated
 
